@@ -6,8 +6,8 @@ require 'pp'
 def gross_for_director(director_data)
 index=0;
 gross = 0
-while index< director_data[:movies].length do
-  gross += director_data[:movies][index][:worldwide_gross]
+while index< director_data[index][:movies].length do
+  gross += director_data[index][:movies][index][:worldwide_gross]
   index +=1
 end
 return gross
