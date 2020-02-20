@@ -17,6 +17,11 @@ end
 #
 # { directorOne => allTheMoneyTheyMade, ... }
 def directors_totals(nds)
+  index = 0
   result = {}
-  nil
+  while index<nds.length
+    sausage = {nds[index][:name] => gross_for_director(nds[index]:name)
+    index+=1
+  end
+      result.merge!(sausage)
 end
