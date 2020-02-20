@@ -9,7 +9,7 @@ def gross_for_director(director_data)
   while row_index< directors_database.length
     inner_index=0
     while inner_index<directors_database[row_index][:movies].length;
-    gross += directors_database[row_index][:movies][inner_index][:worldwide_grosses] if directors_database[row_index][:name] == director_data
+    gross += directors_database[row_index][:movies][inner_index][:worldwide_gross] if directors_database[row_index][:name] == director_data
     inner_index +=1
     end
     row_index+=1
